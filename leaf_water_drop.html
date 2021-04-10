@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf_water_droop</title>
+</head>
+<style>
+    div {
+        background: linear-gradient(180deg, white, rgba(0, 225, 255, 0.781), rgba(0, 243, 0, 0.979));
+        height: 40em;
+    }
+    #leaf {
+        margin-top: 5em;
+        animation: leaf_move 6s linear infinite;
+    }
+    @keyframes leaf_move {
+        50% {
+            transform: skewY(-10deg);
+        }
+    }
+    #stem {
+        width: 10em;
+        height: 40em;
+        position: absolute;
+        margin-left: -5.3em;
+        animation: stem_move 5s linear infinite;
+    }
+    @keyframes stem_move {
+        50% {
+            transform: skewX(3deg);
+        }
+    }
+    #drop1 {
+        position: absolute;
+        margin-left: -15%;
+        margin-top: -7.5em;
+        transform: scale(0.3);
+        animation: drop_move 6s linear infinite;
+        transform: scale(0.28);
+    }
+    @keyframes drop_move {
+        10% {
+            margin-left: -18%;
+            opacity: 1;
+        }
+        50% {
+            margin-left: -19%;
+            opacity: 1;
+        }
+        80% {
+            margin-left: -19%;
+            opacity: 0.31;
+        }
+        100% {
+            margin-top: 7em;
+            margin-left: -19%;
+            opacity: 0;
+        }
+    }
+    #drop {
+        position: absolute;
+        margin-left: -18.2%;
+        margin-top: -6em;
+        transform: scale(0.3);
+        animation: fall 4s linear infinite;
+        transition: 5s;
+    }
+    #sec1 {
+        margin-top: 8.8em;
+        z-index: 1;
+        position: absolute;
+        letter-spacing: 2.9em;
+    }
+    .flower {
+        height: 10em;
+        animation: flower1 4s linear infinite;
+    }
+    @keyframes flower1 {
+        50% {
+            transform: skewX(12deg);
+        }
+    }
+    .flower2 {
+        height: 8em;
+        animation: flower2 5s linear infinite;
+    }
+    @keyframes flower2 {
+        50% {
+            transform: skewY(35deg);
+        }
+    }
+    #sec2 {
+        margin-top: -1.30em;
+        z-index: 1;
+        position: absolute;
+    }
+    .grass {
+        height: 25em;
+        animation: grass 8s linear infinite;
+        box-shadow: 0 0 15px rgb(1, 228, 50),
+            0 0 5px rgb(10, 126, 91),
+            0 0 5px rgb(55, 0, 206);
+        padding: -18em;
+    }
+    @keyframes grass {
+        50% {
+            transform: skewX(4deg);
+        }
+    }
+    /*@keyframes fall {
+        50% {
+            margin-top: 1em;
+            opacity: 1;
+            transform: scale(0.5);
+        }
+        80% {
+            margin-top: 7em;
+            transform: scale(0.6);
+            opacity: 0.31;
+        }
+        100% {
+            transform: scale(0.7);
+            margin-top: 10em;
+            opacity: 0;
+        }
+    }*/
+</style>
+<body align="center">
+    <div>
+        <img src="leaf.jpg" height="200" width="400" id="leaf">
+        <img src="stem.jpg" height="300" width="100" id="stem">
+        <br><br>
+        <img src="drop.jpg" height="100" width="100" id="drop1"><br><br>
+        <section id="sec1">
+            <img src="flower1.jpg" height="100" width="100" class="flower">
+            <img src="flower2.jpg" height="100" width="100" class="flower2">
+            <img src="flower3.jpg" height="100" width="100" class="flower">
+            <img src="flower4.jpg" height="100" width="100" class="flower2">
+            <img src="flower5.jpg" height="100" width="100" class="flower">
+            <img src="flower4.jpg" height="100" width="100" class="flower2">
+            <img src="flower2.jpg" height="100" width="100" class="flower">
+            <img src="flower1.jpg" height="100" width="100" class="flower2">
+            <img src="flower3.jpg" height="100" width="100" class="flower">
+        </section>
+        <!---- <img src="water_drop.jpg" height="100" width="100" id="drop">-->
+        <section id="sec2">
+            <img src="grass.jpg" height="100" width="120" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="120" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="120" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+            <img src="grass.jpg" height="100" width="120" class="grass">
+            <img src="grass.jpg" height="100" width="100" class="grass">
+        </section>
+    </div>
+</body>
+</html>
